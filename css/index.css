@@ -1,0 +1,150 @@
+body {
+  background-color: #333;
+  color: white;
+}
+header {
+  position: fixed;
+  width: 100%;
+}
+#header-img {
+  height: 40px;
+  margin: -12px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav-link {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+.about {
+  float: right;
+  padding-right: 5vh;
+}
+
+li {
+  display: block;
+  color: gold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 14px 5px;
+  margin: 14px 30px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #4caf50;
+}
+/* this marks the end of the nav bar*/
+
+section {
+  height: 780px;
+}
+p {
+  font-size: 20px;
+}
+/* first section */
+#first {
+  text-align: center;
+  background-color: hsl(0, 0%, 95%);
+  color: black;
+}
+#title {
+  font-size: 30px;
+}
+#book {
+  height: 50%;
+  border: 5px solid #555;
+  border-radius: 5px;
+}
+/* end of first section */
+
+/*video section */
+#video-section {
+  text-align: center;
+  background-color: black;
+  margin-top: 2%;
+  height: 500px;
+}
+#video-title {
+  font-size: 25px;
+}
+iframe {
+  margin-top: 5%;
+}
+
+/* end of video section*/
+
+/* form section*/
+#form-section {
+  background-color: black;
+  margin-top: 10%;
+  height: 150px;
+  text-align: center;
+  border: 1px solid gold;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+}
+#submit {
+  color: gold;
+  font-size: 14px;
+  background-color: black;
+  border: 1px solid gold;
+  border-radius: 5px;
+  float: center;
+}
+/* end of form section*/
+/* pre-order section*/
+#order-here {
+  height: 100%;
+  margin-bottom: 150px;
+}
+#pre-order {
+  text-align: center;
+  font-size: 35px;
+}
+#store-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.store {
+  height: 100px;
+}
+/*need to set one thing to flex */
+/* end of pre-order section*/
+footer {
+  background-color: black;
+  color: grey;
+  float: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+  }
+  section {
+    height: 250px;
+  }
+}
